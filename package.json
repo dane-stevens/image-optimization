@@ -1,0 +1,19 @@
+{
+  "name": "images",
+  "module": "server.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run server.ts",
+    "build": "bun build --target=bun --production --outfile=./dist/server.js ./server.ts",
+    "start": "bun dist/server.js"
+   },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "sharp": "^0.34.5"
+  }
+}
