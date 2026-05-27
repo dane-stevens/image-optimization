@@ -44,4 +44,4 @@ RUN bun install --production
 
 EXPOSE 3000
 
-CMD ["bun", "dist/index.js"]
+CMD ["bun", "run", "start"]
