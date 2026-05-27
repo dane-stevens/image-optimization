@@ -1,5 +1,5 @@
 import sharp from 'sharp'
-import { s3, S3Client, S3File } from 'bun'
+import { S3Client, S3File } from 'bun'
 import { pipeline } from 'stream/promises'
 import { PassThrough } from 'stream'
 import { env } from './env'
