@@ -1,6 +1,7 @@
 # PicFlow
-
-![](./public/picflowLogo.png)
+<center>
+<img src="./public/picflowLogo.png" alt="PicFlow Logo"/>
+</center>
 
 High-performance image transformation server built with Bun, Sharp, and S3-compatible object storage.
 
