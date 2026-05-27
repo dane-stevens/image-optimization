@@ -7,6 +7,8 @@ High-performance image transformation server built with Bun, Sharp, and S3-compa
 
 Streams images directly from S3, applies transformations on-the-fly, and returns optimized formats like AVIF and WebP.
 
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/_caVaa?referralCode=dsmedia&utm_medium=integration&utm_source=template&utm_campaign=generic)
+
 ## Features
 
 - Stream-based image processing
