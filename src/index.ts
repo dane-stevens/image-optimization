@@ -69,7 +69,7 @@ const Payload = z.object({
   negate: z.optional(z.enum(['true', '1']).transform(() => true)),
 })
 
-Bun.serve({
+const server = Bun.serve({
   port: process.env.PORT || 3000,
   routes: {
     "/favicon.ico": () => new Response('OK'),
@@ -148,3 +148,5 @@ Bun.serve({
     }
   }
 })
+
+console.log(`Listening on ${server.url}`)
