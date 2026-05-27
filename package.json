@@ -3,8 +3,8 @@
   "module": "server.ts",
   "type": "module",
   "scripts": {
-    "dev": "bun run src/index.ts",
-    "build": "bun build src/index.ts --target bun --outdir dist --production",
+    "dev": "bun run src/index.ts --watch",
+    "build": "bun build ./src/index.ts --target bun --outdir ./dist --production",
     "start": "bun index.js"
   },
   "devDependencies": {
