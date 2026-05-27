@@ -1,4 +1,6 @@
-# Image Transformer
+# PicFlow
+
+![](./public/picflowLogo.png)
 
 High-performance image transformation server built with Bun, Sharp, and S3-compatible object storage.
 
