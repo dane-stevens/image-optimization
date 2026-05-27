@@ -4,7 +4,7 @@ FROM node:24-slim
 RUN apt-get update && apt-get install -y curl unzip ca-certificates && rm -rf /var/lib/apt/lists/*
 
 # Install Bun 1.3
-RUN curl -fsSL https://bun.sh/install | bash -s "bun-v1.3.0"
+RUN curl -fsSL https://bun.sh/install | bash -s "bun-v1.3.14"
 
 ENV BUN_INSTALL="/root/.bun"
 ENV PATH="$BUN_INSTALL/bin:$PATH"
