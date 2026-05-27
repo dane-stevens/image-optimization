@@ -3,10 +3,10 @@
   "module": "server.ts",
   "type": "module",
   "scripts": {
-    "dev": "bun run server.ts",
-    "build": "bun build --target=bun --production --outfile=./dist/server.js ./server.ts",
-    "start": "bun dist/server.js"
-   },
+    "dev": "bun run src/index.ts",
+    "build": "bun build --target=bun --production --outdir=dist/ ./src --root src",
+    "start": "bun dist/index.js"
+  },
   "devDependencies": {
     "bun-types": "latest"
   },
@@ -14,6 +14,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "sharp": "^0.34.5"
+    "sharp": "^0.34.5",
+    "zod": "^4.4.3"
   }
 }
