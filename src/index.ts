@@ -72,7 +72,8 @@ const Payload = z.object({
 Bun.serve({
   port: process.env.PORT || 3000,
   routes: {
-    "/favicon.ico": () => new Response('OK')
+    "/favicon.ico": () => new Response('OK'),
+    "/": () => new Response('Please specify an image path')
   },
   async fetch(request) {
 
