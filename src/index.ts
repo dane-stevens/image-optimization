@@ -106,7 +106,9 @@ const server = Bun.serve({
       const { mimetype, format } = getPreferredFormat(request.headers.get('Accept'), returnFormat)
       headers['Content-Type'] = mimetype
 
-      let transformer = sharp().autoOrient()
+      let transformer = sharp()
+      transformer.cache(false)
+      transformer.autoOrient()
 
       if (height || width || fit) {
         transformer = transformer.resize({
